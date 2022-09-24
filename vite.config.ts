@@ -6,5 +6,8 @@ export default defineConfig({
   plugins: [react()],
   esbuild: {
     jsxInject: `import React from 'react'`
+  },
+  server: {
+    open: true
   }
 })
