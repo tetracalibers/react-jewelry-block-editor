@@ -1,5 +1,6 @@
 # MY_CONF
 *.txt
+mock
 
 # Logs
 logs
