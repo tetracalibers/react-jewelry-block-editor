@@ -25,3 +25,10 @@ export type Block<T extends BlockType> = {
   boxType: BoxType
   format: (args: FormatArgs[T]) => ReactNode
 }
+
+export const initFormatArgs: FormatArgs = {
+  paragraph: {
+    input: '',
+    boxType: 'inline'
+  }
+}
