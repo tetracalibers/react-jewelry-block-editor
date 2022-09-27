@@ -1,4 +1,5 @@
 import { ReactElement, ReactNode } from 'react'
+import { ValueOf } from '../../types/ValueOf'
 
 // ブロック名の配列（新しいブロックをつくる時に追加していく）
 const blockType = ['paragraph'] as const
@@ -25,6 +26,11 @@ export type Block<T extends BlockType> = {
   boxType: BoxType
   format: (args: FormatArgs[T]) => ReactNode
 }
+
+// 全ブロックオブジェクトのコレクション
+export type Blocks = ValueOf<{
+  [t in BlockType]: Block<t>
+}>[]
 
 export const initFormatArgs: FormatArgs = {
   paragraph: {
