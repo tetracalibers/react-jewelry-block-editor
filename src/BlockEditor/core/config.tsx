@@ -1,5 +1,5 @@
 import { ReactElement, ReactNode } from 'react'
-import { ValueOf } from '../../types/ValueOf'
+import { BiParagraph } from 'react-icons/bi'
 
 // ブロック名の配列（新しいブロックをつくる時に追加していく）
 const blockType = ['paragraph'] as const
@@ -28,13 +28,24 @@ export type Block<T extends BlockType> = {
 }
 
 // 全ブロックオブジェクトのコレクション
-export type Blocks = ValueOf<{
-  [t in BlockType]: Block<t>
-}>[]
+export type Blocks = Block<BlockType>[]
 
-export const initFormatArgs: FormatArgs = {
+// format関数の引数初期値
+export const init: FormatArgs = {
   paragraph: {
     input: '',
     boxType: 'inline'
   }
 }
+
+// ブロック設定
+export const blockConf: Blocks = [
+  {
+    type: 'paragraph',
+    icon: <BiParagraph />,
+    boxType: 'both',
+    format: ({ input, boxType } = { ...init.paragraph }) => {
+      return <p>{input}</p>
+    }
+  }
+]
