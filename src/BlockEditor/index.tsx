@@ -1,3 +1,5 @@
+import { Toolbar } from './components/domain/Toolbar'
+
 export const BlockEditor = () => {
-  return <div>ここにブロックエディタを作っていきます</div>
+  return <Toolbar />
 }
