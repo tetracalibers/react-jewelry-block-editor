@@ -9,5 +9,10 @@ export default defineConfig({
   },
   server: {
     open: true
+  },
+  resolve: {
+    alias: {
+      '@/': `${__dirname}/src/`
+    }
   }
 })

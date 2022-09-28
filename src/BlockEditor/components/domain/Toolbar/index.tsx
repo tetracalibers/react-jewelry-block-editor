@@ -1,4 +1,4 @@
-import { blockConf } from '../../../core/config'
+import { blockConf } from '@/BlockEditor/core/config'
 
 export const Toolbar = () => {
   return (

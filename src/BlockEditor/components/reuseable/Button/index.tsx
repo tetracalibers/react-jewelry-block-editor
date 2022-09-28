@@ -1,6 +1,6 @@
 import { ComponentPropsWithRef, ForwardedRef, forwardRef } from 'react'
 import styled, { css } from 'styled-components'
-import { DollarProps } from '../../../../types/DollarProps'
+import { DollarProps } from '@/types/DollarProps'
 
 export const buttonTypeOpt = ['submit', 'reset', 'button'] as const
 type ButtonType = typeof buttonTypeOpt[number]
