@@ -14,5 +14,6 @@ export const Example: ComponentStory<typeof IconButton> = ({
 
 Example.args = {
   icon: <BiParagraph />,
-  cssReset: false
+  cssReset: false,
+  label: '段落を追加'
 }

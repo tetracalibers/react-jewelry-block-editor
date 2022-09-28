@@ -3,12 +3,13 @@ import { IconButtonProps } from './model'
 import { Button } from '@/BlockEditor/components/reuseable/Button'
 
 const _IconButton = (
-  { icon, ...props }: IconButtonProps,
+  { icon, label, ...props }: IconButtonProps,
   ref: ForwardedRef<HTMLButtonElement>
 ) => {
   return (
     <Button ref={ref} {...props}>
       {icon}
+      {label}
     </Button>
   )
 }

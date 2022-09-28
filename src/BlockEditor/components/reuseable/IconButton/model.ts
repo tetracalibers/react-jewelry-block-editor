@@ -7,4 +7,6 @@ export interface IconButtonProps extends ComponentPropsWithRef<'button'> {
   icon: ReactElement
   // 内部で使うButtonコンポーネントに渡す
   cssReset?: boolean
+  // 何のボタンなのかを表すラベル(必須)
+  label: string
 }
