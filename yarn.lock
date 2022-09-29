@@ -1518,6 +1518,11 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@polym/a11y@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@polym/a11y/-/a11y-1.0.2.tgz#3dcd7cea647a45db3a6666229906dd7162056f7b"
+  integrity sha512-H6iyWpwayk3ZCJWdx+rp5VCqTPxESstZFBkjgdKTeGeWoCSA5oN/FhqlrIy49phkB0Mr+1xU3Myhztucg7G/8A==
+
 "@rollup/pluginutils@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.2.1.tgz#e6c6c3aba0744edce3fb2074922d3776c0af2a6d"
