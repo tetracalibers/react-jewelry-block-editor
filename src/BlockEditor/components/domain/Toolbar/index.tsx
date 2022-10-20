@@ -1,10 +1,11 @@
 import { blockConf } from '@/BlockEditor/core/config'
+import { AddButton } from '@/BlockEditor/components/buttons/AddButton'
 
 export const Toolbar = () => {
   return (
     <>
       {blockConf.map((block) => (
-        <button key={block.type}>{block.icon}</button>
+        <AddButton type={block.type} icon={block.icon} />
       ))}
     </>
   )
