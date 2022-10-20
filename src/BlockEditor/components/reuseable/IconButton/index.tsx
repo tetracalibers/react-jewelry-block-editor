@@ -1,7 +1,7 @@
 import { ForwardedRef, forwardRef } from 'react'
 import { IconButtonProps } from './model'
 import { Button } from '@/BlockEditor/components/reuseable/Button'
-import { VisuallyHidden } from '@polym/a11y'
+import { VisuallyHidden } from '@/BlockEditor/components/reuseable/VisuallyHidden'
 
 const _IconButton = (
   { icon, label, ...props }: IconButtonProps,
