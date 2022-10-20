@@ -1,4 +1,4 @@
-import { ForwardedRef, forwardRef } from 'react'
+import { cloneElement, ForwardedRef, forwardRef } from 'react'
 import { IconButtonProps } from './model'
 import { Button } from '@/BlockEditor/components/reuseable/Button'
 import { VisuallyHidden } from '@/BlockEditor/components/reuseable/VisuallyHidden'
@@ -9,7 +9,7 @@ const _IconButton = (
 ) => {
   return (
     <Button ref={ref} {...props}>
-      {icon}
+      {cloneElement(icon, { 'aria-hidden': true })}
       <VisuallyHidden>{label}</VisuallyHidden>
     </Button>
   )
