@@ -5,7 +5,7 @@ export const Toolbar = () => {
   return (
     <>
       {blockConf.map((block) => (
-        <AddButton type={block.type} icon={block.icon} />
+        <AddButton type={block.type} icon={block.icon} key={block.type} />
       ))}
     </>
   )
